@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    
+    <link rel="stylesheet" href="style.css">
 
-    <title>Blog Home </title>
+    <title>ENSAblog </title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -23,9 +25,9 @@
 <body>
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="{{route('home')}}">HOME</a>
+        <a class="navbar-brand" href="{{route('home')}}">ENSA<span class="headerSecondeTitle">blog</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -40,7 +42,7 @@
                 @if(Auth::check())
 
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('admin.index')}}">Admin</a>
+                    <a class="nav-link" href="{{route('admin.index')}}">Zakaria</a>
                 </li>
 
                 @else
@@ -92,7 +94,7 @@
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Search for...">
                         <span class="input-group-btn">
-                <button class="btn btn-secondary" type="button">Go!</button>
+                <button class="btn btn-info" type="button">Go!</button>
               </span>
                     </div>
                 </div>
@@ -106,26 +108,26 @@
                         <div class="col-lg-6">
                             <ul class="list-unstyled mb-0">
                                 <li>
-                                    <a href="#">Web Design</a>
+                                    <a href="#">Internat</a>
                                 </li>
                                 <li>
-                                    <a href="#">HTML</a>
+                                    <a href="#">Scolarité</a>
                                 </li>
                                 <li>
-                                    <a href="#">Freebies</a>
+                                    <a href="#">Services</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="col-lg-6">
                             <ul class="list-unstyled mb-0">
                                 <li>
-                                    <a href="#">JavaScript</a>
+                                    <a href="#">Cours</a>
                                 </li>
                                 <li>
-                                    <a href="#">CSS</a>
+                                    <a href="#">Tds</a>
                                 </li>
                                 <li>
-                                    <a href="#">Tutorials</a>
+                                    <a href="#">Exams</a>
                                 </li>
                             </ul>
                         </div>
@@ -135,9 +137,9 @@
 
             <!-- Side Widget -->
             <div class="card my-4">
-                <h5 class="card-header">Side Widget</h5>
+                <h5 class="card-header">Rappel!</h5>
                 <div class="card-body">
-                    You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
+                Il est porté à la connaissance des élèves ingénieurs de GI2 que l’examen de rattrapage de l’élément du module : JAVA, aura lieu le vendredi 02 avril 2021 du 11h00 à 12h00. 
                 </div>
             </div>
 
@@ -152,7 +154,7 @@
 <!-- Footer -->
 <footer class="py-5 bg-dark">
     <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+        <p class="m-0 text-center text-white">Copyright &copy; ENSAblog</p>
     </div>
     <!-- /.container -->
 </footer>
