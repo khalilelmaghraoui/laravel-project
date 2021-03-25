@@ -5,14 +5,15 @@
 
 
 
-        <h1 class="my-4">Page Heading
-            <small>Secondary Text</small>
+        <h1 class="my-4">ACTUALITÉS
+            <small>GRAND PUBLIC</small>
         </h1>
 
         <!-- Blog Post -->
     @foreach($posts as $post)
         <div class="card mb-4">
-            <img class="card-img-top" src="{{$post->post_image}}" alt="Card image cap">
+{{--            <img class="card-img-top" src="{{asset('/images/' . $post->post_image)}}" alt="Card image cap">--}}
+            <img class="card-img-top" src="https://picsum.photos/id/2/200/80" alt="Card image cap">
             <div class="card-body">
                 <h2 class="card-title">{{$post->title}}</h2>
                 <p class="card-text">{{Str::limit($post->body, '50', '.....')}}</p>
