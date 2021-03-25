@@ -12,7 +12,7 @@
         <!-- Blog Post -->
     @foreach($posts as $post)
         <div class="card mb-4">
-            <img class="card-img-top" src="{{$post->post_image}}" alt="Card image cap">
+            <img class="card-img-top" src="https://picsum.photos/200/150" alt="Card image cap">
             <div class="card-body">
                 <h2 class="card-title">{{$post->title}}</h2>
                 <p class="card-text">{{Str::limit($post->body, '50', '.....')}}</p>
