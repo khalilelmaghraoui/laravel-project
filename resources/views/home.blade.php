@@ -5,8 +5,8 @@
 
 
 
-        <h1 class="my-4">Page Heading
-            <small>Secondary Text</small>
+        <h1 class="my-4">ACTUALITÉS
+            <small>GRAND PUBLIC</small>
         </h1>
 
         <!-- Blog Post -->
