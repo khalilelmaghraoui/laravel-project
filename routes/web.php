@@ -11,6 +11,13 @@ Route::get('/post/{post}', 'PostController@show')->name('post');
 Route::middleware('auth')->group(function(){
 
     Route::get('/admin', 'AdminsController@index')->name('admin.index');
+    Route::get('/showInfo', 'registerController@show');
+    Route::get('/newDemande', 'registerController@register');
+    
+    Route::get('/show', 'HomeController@index')->name('home');
+
+    Route::get('/inscription','InscriptionController@show')->name('inscription');
+    Route::post('/inscription','InscriptionController@index')->name('inscription');
 
     Route::get('/admin/posts', 'PostController@index')->name('post.index');
     Route::get('/admin/posts/create', 'PostController@create')->name('post.create');
