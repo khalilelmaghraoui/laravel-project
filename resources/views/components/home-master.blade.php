@@ -40,11 +40,14 @@
                 </li>
 
                 @if(Auth::check())
+                <li class="nav-item">
+                        <a class="nav-link" href="/newDemande">new Demande</a>
+                    </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('admin.index')}}">Zakaria</a>
                 </li>
-
+               
                 @else
 
                 <li class="nav-item">
