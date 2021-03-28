@@ -13,6 +13,7 @@ Route::middleware('auth')->group(function(){
     Route::get('/admin', 'AdminsController@index')->name('admin.index');
     Route::get('/showInfo', 'registerController@show');
     Route::get('/newDemande', 'registerController@register');
+    Route::get('/preRegister', 'registerController@preRegister');
     
     Route::get('/show', 'HomeController@index')->name('home');
 

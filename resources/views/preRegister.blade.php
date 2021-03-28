@@ -24,7 +24,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card" >
-                    <div class="card-header bg-info">{{ __('Re-Inscription') }}</div>
+                    <div class="card-header bg-info">{{ __('Pre-Inscription') }}</div>
     
                     <div class="card-body">
                         <!--@if(session()->has('message'))
@@ -183,7 +183,7 @@
                             <div class="form-group row mb-0">
                                 <div class="col-md-6 offset-md-4">
                                     <button type="submit" class="btn btn-primary" >
-                                        {{ __('Confirm') }}
+                                        {{ __('Register') }}
                                     </button>
                                 </div>
                             </div>
